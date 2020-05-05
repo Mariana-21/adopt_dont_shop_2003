@@ -1,7 +1,10 @@
-<h1><%= @shelter.name%></h1><br/>
-<%= "Address: #{@shelter.address}" %><br/>
-<%= "City: #{@shelter.city}" %><br/>
-<%= "State: #{@shelter.state}" %><br/>
-<%= "Zip: #{@shelter.zip}" %><br/>
+<h1><%= @shelter.name%></h1><br />
+<%= "Address: #{@shelter.address}" %><br />
+<%= "City: #{@shelter.city}" %><br />
+<%= "State: #{@shelter.state}" %><br />
+<%= "Zip: #{@shelter.zip}" %><br />
 
-<%= link_to  "Back to all shelters", "/shelters" %>
+<%= link_to  "Back to all shelters", "/shelters" %><br />
+
+<%= link_to  "Update Shelter", "/shelters/#{@shelter.id}/edit" %><br />
+<%= link_to  "Delete Shelter", "/shelters/#{@shelter.id}", method: :delete, data: {confirm: "Are you sure you want to delete this shelter?"} %>
