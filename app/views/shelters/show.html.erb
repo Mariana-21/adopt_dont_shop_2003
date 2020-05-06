@@ -5,6 +5,7 @@
 <%= "Zip: #{@shelter.zip}" %><br />
 
 <%= link_to  "Back to all shelters", "/shelters" %><br />
+<%= link_to  "View this shelter's pets", "/shelters/#{@shelter.id}/pets" %><br/>
 
 <%= link_to  "Update Shelter", "/shelters/#{@shelter.id}/edit" %><br />
 <%= link_to  "Delete Shelter", "/shelters/#{@shelter.id}", method: :delete, data: {confirm: "Are you sure you want to delete this shelter?"} %>
