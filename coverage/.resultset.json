@@ -188,10 +188,47 @@
         1,
         1,
         1,
+        null,
+        1,
+        null,
         null
       ],
       "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_2003/app/helpers/application_helper.rb": [
         1,
+        null
+      ],
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_2003/spec/features/shelters/delete_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_2003/spec/features/shelters/edit_spec.rb": [
@@ -325,12 +362,49 @@
         null,
         null
       ],
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_2003/spec/models/shelter_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null
+      ],
       "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_2003/app/models/shelter.rb": [
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_2003/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_2003/app/models/pet.rb": [
         1,
         null,
         null
       ],
-      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_2003/app/models/application_record.rb": [
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_2003/app/controllers/pets_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_2003/app/controllers/application_controller.rb": [
         1,
         1,
         null
@@ -378,13 +452,8 @@
         null,
         null,
         null
-      ],
-      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_2003/app/controllers/application_controller.rb": [
-        1,
-        1,
-        null
       ]
     },
-    "timestamp": 1588700376
+    "timestamp": 1588766979
   }
 }
