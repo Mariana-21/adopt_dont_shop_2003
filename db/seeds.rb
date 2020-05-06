@@ -15,3 +15,5 @@ pet2 = Pet.create(image: "https://www.thepaws.net/wp-content/uploads/2018/09/bea
                         name: "Yayla", age: "4", sex: "Female", shelter_id: shelter2.id)
 pet3 = Pet.create(image: "https://www.dogster.com/wp-content/uploads/2018/12/german-shepard-dog-face.jpg", 
                         name: "Shadow", age: "3", sex: "Male", shelter_id: shelter3.id)
+pet4 = Pet.create(image: "https://i.pinimg.com/originals/16/f3/9e/16f39e58bede777ff5ad25e57521efb4.jpg",
+                        name: "Max", age: "3", sex: "Male", shelter_id: shelter2.id)
