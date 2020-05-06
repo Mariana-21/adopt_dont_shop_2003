@@ -9,11 +9,11 @@ RSpec.describe "As a visitor", type: :feature do
       shelter3 = Shelter.create(name: "DogSpot", address: "4151 Avenida Plaza Real", city: "Oceanside", state: "CA", zip: "92056")
 
       pet1 = Pet.create(image: "https://dogzone-tcwebsites.netdna-ssl.com/wp-content/uploads/2017/09/chihuahua-names-1.jpg",
-                        name: "Skip", age: "2", sex: "Male", shelter: "#{shelter1.name}")
+                        name: "Skip", age: "2", sex: "Male", shelter_id: shelter1.id)
       pet2 = Pet.create(image: "https://www.thepaws.net/wp-content/uploads/2018/09/beagle-bloodhound-dog-mix-2.jpg",
-                        name: "Yayla", age: "4", sex: "Female", shelter: "#{shelter2.name}")
+                        name: "Yayla", age: "4", sex: "Female", shelter_id: shelter2.id)
       pet3 = Pet.create(image: "https://www.dogster.com/wp-content/uploads/2018/12/german-shepard-dog-face.jpg", 
-                        name: "Shadow", age: "3", sex: "Male", shelter: "#{shelter3.name}")
+                        name: "Shadow", age: "3", sex: "Male", shelter_id: shelter3.id)
 
       visit "/pets"
 
@@ -21,7 +21,7 @@ RSpec.describe "As a visitor", type: :feature do
       expect(page).to have_content(pet1.name) 
       expect(page).to have_content(pet1.age) 
       expect(page).to have_content(pet1.sex) 
-      expect(page).to have_content(pet1.shelter) 
+      expect(page).to have_content(shelter1.name) 
       expect(page).to have_css("img[src*='#{pet2.image}']")
       expect(page).to have_css("img[src*='#{pet3.image}']")
     end
