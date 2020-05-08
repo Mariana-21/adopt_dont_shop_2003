@@ -1,0 +1,18 @@
+<%= form_tag "/shelters/#{@shelter_pet.id}/pets" do %>
+<%= label_tag :image, "Image URL" %><span>:</span><br>
+<%= text_field_tag :image %><br>
+
+<%= label_tag :name %><span>:</span><br>
+<%= text_field_tag :name %><br>
+
+<%= label_tag :description, "Description (About Me)" %><span>:</span><br>
+<%= text_field_tag :description %><br>
+
+<%= label_tag :age, "Approximate Age" %><span>:</span><br>
+<%= text_field_tag :age %><br>
+
+<%= label_tag :sex %><span>:</span><br>
+<%= text_field_tag :sex %><br>
+
+<%= submit_tag "Create Pet" %>
+<% end %>

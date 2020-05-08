@@ -31,22 +31,22 @@ RSpec.describe "As a visitor" do
       visit "/shelters/#{shelter1.id}/pets"
 
       expect(page).to have_css("img[src*='#{pet1.image}']")
+      expect(page).to have_link(pet1.name) 
+      expect(page).to have_content(pet1.age) 
+      expect(page).to have_content(pet1.sex) 
       expect(page).to_not have_css("img[src*='#{pet2.image}']")
       expect(page).to_not have_css("img[src*='#{pet3.image}']")
       expect(page).to_not have_css("img[src*='#{pet4.image}']")
-      expect(page).to have_link(pet1.name) 
       expect(page).to_not have_link(pet2.name) 
-      expect(page).to have_content(pet1.age) 
-      expect(page).to have_content(pet1.sex) 
-
+      
       visit "/shelters/#{shelter3.id}/pets"
 
       expect(page).to have_css("img[src*='#{pet3.image}']")
       expect(page).to have_link(pet3.name) 
       expect(page).to have_content(pet3.age) 
       expect(page).to have_content(pet4.age) 
-      expect(page).to have_content(pet1.age) 
       expect(page).to have_content(pet3.sex) 
+      expect(page).to_not have_content(pet1.age) 
     end
   end
 end
