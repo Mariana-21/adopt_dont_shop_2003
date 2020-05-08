@@ -7,7 +7,7 @@ RSpec.describe "As a visitor" do
       shelter2 = Shelter.create(name: "La Costa Animal Hospital", address: "7668 El Camino Real #101", city: "Carlsbad", state: "CA", zip: "92009")
       shelter3 = Shelter.create(name: "DogSpot", address: "4151 Avenida Plaza Real", city: "Oceanside", state: "CA", zip: "92056")
 
-       pet1 = Pet.create(image: "https://dogzone-tcwebsites.netdna-ssl.com/wp-content/uploads/2017/09/chihuahua-names-1.jpg",
+      pet1 = Pet.create(image: "https://dogzone-tcwebsites.netdna-ssl.com/wp-content/uploads/2017/09/chihuahua-names-1.jpg",
                          name: "Skip", description: "I am very energetic, I love to be around people!", age: "2", sex: "Male", adoptable_status: "Adoptable", shelter_id: shelter1.id)
       pet2 = Pet.create(image: "https://www.thepaws.net/wp-content/uploads/2018/09/beagle-bloodhound-dog-mix-2.jpg",
                         name: "Yayla", description: "I am the calmest dog you will ever meet, I love belly rubs and lots of treats", age: "4", sex: "Female", adoptable_status: "Adoptable", shelter_id: shelter2.id)
