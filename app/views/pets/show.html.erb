@@ -4,3 +4,5 @@
 <%= "Sex: #{@pet.sex}" %><br/>
 <%= "Description: #{@pet.description}" %><br/>
 <%= "Adoption status: #{@pet.adoptable_status}" %><br/>
+
+<%= link_to  "Update Pet", "/pets/#{@pet.id}/edit" %>
