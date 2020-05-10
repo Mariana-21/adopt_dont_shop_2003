@@ -1,9 +1,15 @@
 <h1>All Adoptable Pets</h1><br />
 
+<%= link_to 'View All Shelters', "/shelters" %><br>
+
 <% @pets.each do |pet| %>
-<img src="<%= pet.image %>" alt="Pictured: <%= pet.name %>"><br />
-<h3><%= link_to  "#{pet.name}", "/pets/#{pet.id}" %></h3><br />
-<%= "Approximate Age: #{pet.age}"%><br />
-<%= "Sex: #{pet.sex}"%><br />
-<%= "Shelter: #{pet.shelter.name}"%><br />
+  <section id="pet-<%=pet.id%>">
+    <img src="<%= pet.image %>" alt="Pictured: <%= pet.name %>"><br />
+    <h3><%= link_to  "#{pet.name}", "/pets/#{pet.id}" %></h3><br />
+    <%= "Approximate Age: #{pet.age}"%><br />
+    <%= "Sex: #{pet.sex}"%><br />
+    <%= link_to  "Shelter: #{pet.shelter.name}", "/shelters/#{pet.shelter.id}"%><br />
+    <%= link_to  "Update Pet", "/pets/#{pet.id}/edit" %><br/>
+    <%= link_to  "Delete Pet", "/pets/#{pet.id}", method: :delete, data: {confirm: "Are you sure you want to delete this pet?"} %><br>
+  </section>
 <% end %>

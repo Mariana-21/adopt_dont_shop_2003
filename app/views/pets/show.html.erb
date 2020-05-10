@@ -1,9 +1,12 @@
+<%= link_to 'View All Shelters', "/shelters" %><br>
+<%= link_to 'View All Pets', "/pets" %><br>
+
 <img src="<%= @pet.image %>" alt="Pictured: <%= @pet.name %>"><br />
 <h3><%= @pet.name %></h3><br />
 <%= "Approximate Age: #{@pet.age}" %><br />
 <%= "Sex: #{@pet.sex}" %><br />
 <%= "Description: #{@pet.description}" %><br />
 <%= "Adoption status: #{@pet.adoptable_status}" %><br />
-
+<%= link_to  "Shelter: #{@pet.shelter.name}", "/shelters/#{@pet.shelter.id}"%><br />
 <%= link_to  "Update Pet", "/pets/#{@pet.id}/edit" %>
 <%= link_to  "Delete Pet", "/pets/#{@pet.id}", method: :delete, data: {confirm: "Are you sure you want to delete this pet?"} %>
