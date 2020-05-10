@@ -437,6 +437,32 @@
         null,
         null
       ],
+      "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_2003/spec/features/shelters/delete_shelter_index_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/marianaandrade/turing/mod2/projects/adopt_dont_shop_2003/spec/features/shelters/delete_spec.rb": [
         1,
         null,
@@ -766,7 +792,7 @@
         1,
         null,
         1,
-        6,
+        8,
         null,
         null,
         1,
@@ -794,8 +820,8 @@
         null,
         null,
         1,
-        1,
-        1,
+        2,
+        2,
         null,
         null,
         1,
@@ -807,6 +833,6 @@
         null
       ]
     },
-    "timestamp": 1589083419
+    "timestamp": 1589084675
   }
 }
