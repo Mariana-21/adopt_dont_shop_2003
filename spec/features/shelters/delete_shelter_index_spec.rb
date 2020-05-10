@@ -18,7 +18,6 @@ RSpec.describe "As a visitor", type: :feature do
       expect(page).to_not have_link(shelter3.name)
       expect(page).to have_link(shelter2.name) 
       expect(page).to have_link(shelter1.name)
-      save_and_open_page
     end
   end
 end
